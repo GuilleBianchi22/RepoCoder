@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;500&family=Noto+Sans:wght@300;400;500&display=swap');
+nav{
+    background-color: rgba(207,170,234,0.9);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+    nav ul{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        
+
+
+    }
+        nav ul li{
+            margin: 0 8px;
+            }
+        nav ul li a{
+            color:rgba(233,113,25,255);
+            text-decoration: none;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+body{
+    background-color: rgba(207, 170, 234, 0.7);
+}
+main h1{
+
+    background-color: rgba(232,113,33,0.5);
+    padding: 7px;
+    margin-top: 10%;
+}      
+html{
+    font-size: 62.5%;
+}
+.bodyIndex{
+    background-image: url(../img/header.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bodyCreaciones{
+    background-image: url(../img/Creaciones.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.bodyTaller{
+    background-image: url(../img/taller.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+main header h1{
+        color:rgb(255, 254, 254);
+        font-family: 'Josefin Slab', serif;
+        font-size:3rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        text-align:justify;
+}
+footer{
+    background-color: rgba(207,170,234,0.9);
+    color: rgba(233,113,25,255);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0%;
+}
+.presentacion_novedades{
+    background-color: rgba(232,113,33,0.5);
+    padding: 7px;
+    margin-top: 10%;
+}
+.creaciones_taller{
+    width: 40%;
+    background-color: rgba(232,113,33,0.5);
+    padding: 7px;
+    margin-left: 59%;
+    margin-top: 30%;
+}
+.parrafo{
+    width: 99%;
+    background-color:rgba(232, 113, 33, 0.5);
+    padding: 7px;
+    margin-left: 0%;
+    margin-right: 5%;
+    margin-top: 5%;
+    color:rgb(255, 254, 254);
+    font-family: 'Josefin Slab', serif;
+    font-size:2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    text-align:justify;
+}
+.tienda{
+    display: flex;
+    flex-wrap: wrap;
+}
+table{
+    border: 3px solid rgba(233,113,25,255);
+    width: 50%;
+}
+.form{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+.contacto{
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+/* Responsive index */
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "footer";
+}
+#nav{
+    grid-area: nav;
+}
+#header{
+    grid-area: header;
+}
+#footer{
+    grid-area: footer;
+}
+@media (min-width:1024px){
+        .contenedor{
+        grid-template-columns: 60vw 40vw;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "footer footer";
+        }
+}
+/* responsive taller */
+.contenedorTaller{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "footer";
+}
+#nav{
+    grid-area: nav;
+}
+#header{
+    grid-area: header;
+}
+#footer{
+    grid-area: footer;
+}
+@media (min-width:1024px){
+        .contenedorTaller{
+        grid-template-columns: 60vw 40vw;
+        grid-template-areas: 
+        "nav nav"
+        ". header"
+        "footer footer";
+        }
+}
+a:hover{
+    background-color:blueviolet;
+    transform: translateX(10px);
+    cursor: pointer;
+}
